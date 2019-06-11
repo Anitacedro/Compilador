@@ -39,7 +39,7 @@ public class TabelaDeSimbolos {
     public void alteraTipo(int tipo) {
         
         for(Simbolo s : tabela)
-        {   if(s.getTipo()== Tipos.Variavel && (tipo == Tipos.Inteiro || tipo == Tipos.Booleano) )
+        {   if(s.getTipo()== Tipos.Variavel && (tipo == Tipos.Inteiro || tipo == Tipos.Booleano || tipo == Tipos.String) )
                 s.setTipo(tipo);
             if(s.getTipo()== Tipos.Funcao && (tipo == Tipos.FuncaoInteiro || tipo == Tipos.FuncaoBooleano))
                 s.setTipo(tipo);

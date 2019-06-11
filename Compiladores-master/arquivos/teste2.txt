@@ -1,0 +1,13 @@
+programa Pgrau;
+var y, x, a, b: inteiro;
+inicio
+    a := 2;
+se(a = 2) entao
+	se(a = 2) entao
+		a := a + 5;
+b := 3;
+x := 6;
+escreva(x);
+y := a * x + b;
+escreva(y);
+fim.

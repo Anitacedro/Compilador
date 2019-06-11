@@ -44,6 +44,7 @@ public class Simbolos {
     public static final int Ponto = 38;
     public static final int Positivo = 39;
     public static final int Negativo = 40;
+    public static final int String = 41;
     
     public static boolean isOperando(int termo) {
       if( termo == Identificador

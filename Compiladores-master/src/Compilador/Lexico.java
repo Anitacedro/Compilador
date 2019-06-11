@@ -231,6 +231,8 @@ public class Lexico {
             return new Token(id,Simbolos.Var);
         else if (id.equals("inteiro"))
             return new Token(id,Simbolos.Inteiro);
+        else if (id.equals("string"))
+            return new Token(id,Simbolos.String);
         else if (id.equals("booleano"))
             return new Token(id,Simbolos.Booleano);
         else if (id.equals("verdadeiro"))

@@ -228,7 +228,7 @@ public class Sintatico {
 		Lexico(token)
 	fim*/
     	
-    	if(tk.getSimbolo()!=Simbolos.Inteiro && tk.getSimbolo()!= Simbolos.Booleano)
+    	if(tk.getSimbolo()!=Simbolos.Inteiro && tk.getSimbolo()!= Simbolos.Booleano && tk.getSimbolo()!= Simbolos.String)
             throw new AnaliseSintaticaException(lexico.getN_line(),"tipo de variavel invalido.");
         
         
@@ -237,6 +237,8 @@ public class Sintatico {
             case Simbolos.Inteiro: semantico.alteraSimbolo(Tipos.Inteiro);
                 break;
             case Simbolos.Booleano: semantico.alteraSimbolo(Tipos.Booleano);
+                break;
+            case Simbolos.String: semantico.alteraSimbolo(Tipos.String);
                 break;
         }
         tk = lexico.token();

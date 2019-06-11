@@ -11,5 +11,6 @@ public class Tipos {
     public static final int FuncaoBooleano = 5;
     public static final int Funcao = 6;
     public static final int Procedimento = 7;
+    public static final int String = 8;
     
 }
