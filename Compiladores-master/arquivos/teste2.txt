@@ -8,6 +8,6 @@ se(a = 2) entao
 b := 3;
 x := 6;
 escreva(x);
-y := a * x + b;
+y := a * x + b+b;
 escreva(y);
 fim.
